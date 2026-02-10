@@ -9,6 +9,40 @@ android {
         version = release(36)
     }
 
+    flavorDimensions += "env"
+
+    productFlavors {
+        create("analiz") {
+            dimension = "env"
+            applicationId = "com.fourhandsfitness.app.analiz"
+            buildConfigField(
+                "String",
+                "BASE_URL",
+                "\"http://fourhandsfit.com.tr/\""
+            )
+        }
+
+        create("fiyatlistesi") {
+            dimension = "env"
+            applicationId = "com.fourhandsfitness.app.fiyatlistesi"
+            buildConfigField(
+                "String",
+                "BASE_URL",
+                "\"http://fourhandsfit.com.tr/\""
+            )
+        }
+
+        create("hizlikayit") {
+            dimension = "env"
+            applicationId = "com.fourhandsfitness.app.hizlikayit"
+            buildConfigField(
+                "String",
+                "BASE_URL",
+                "\"http://fourhandsfit.com.tr/\""
+            )
+        }
+    }
+
     defaultConfig {
         applicationId = "com.fourhandsfitness.app"
         minSdk = 24
@@ -33,6 +67,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
 }
