@@ -18,7 +18,7 @@ android {
             buildConfigField(
                 "String",
                 "BASE_URL",
-                "\"http://fourhandsfit.com.tr/analiz/analiz.html\""
+                "\"https://fourhandsfit.com.tr/analiz/analiz.html\""
             )
         }
 
@@ -28,7 +28,7 @@ android {
             buildConfigField(
                 "String",
                 "BASE_URL",
-                "\"http://fourhandsfit.com.tr/fiyatlistesi/fiyat.php\""
+                "\"https://fourhandsfit.com.tr/fiyatlistesi/fiyat.php\""
             )
         }
 
@@ -38,7 +38,7 @@ android {
             buildConfigField(
                 "String",
                 "BASE_URL",
-                "\"http://fourhandsfit.com.tr/hizlikayit/hizlikayit.php\""
+                "\"https://fourhandsfit.com.tr/hizlikayit/hizlikayit.php\""
             )
         }
     }
