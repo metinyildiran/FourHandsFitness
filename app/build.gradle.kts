@@ -18,7 +18,7 @@ android {
             buildConfigField(
                 "String",
                 "BASE_URL",
-                "\"https://fourhandsfit.com.tr/analiz/analiz.html\""
+                "\"file:///android_asset/index.html\""
             )
         }
 
